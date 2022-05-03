@@ -15,7 +15,7 @@ def printResult(figure, area):
     print("Die Fläche vom", figure, "ist", round(area, 2), "cm^2")
 
 
-def promptUserInput():
+def decideFigure():
     figure = input('Welche geometrischen Figur soll berechnet werden? ')
 
     if figure == 'Kreis':
@@ -38,4 +38,4 @@ def promptUserInput():
         print('Diese Figur kenne ich nicht!')
 
 
-promptUserInput()
+decideFigure()
