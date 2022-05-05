@@ -13,4 +13,3 @@ def greatestChar(long_word):
 
 
 greatest_char = greatestChar(word)
-print("Der größte Buchstabe ist: ", greatest_char)
