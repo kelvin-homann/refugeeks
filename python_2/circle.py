@@ -18,6 +18,7 @@ class Circle:
 
 
 kreis1 = Circle(12)
+kreis1.setRadius(23)
 print("Radius: ", kreis1.getRadius())
 print("Umfang: ", kreis1.getUmfang())
 print("Fläche: ", kreis1.getFlaeche())
