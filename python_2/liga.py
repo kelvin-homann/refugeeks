@@ -58,11 +58,3 @@ liga.spiele(t1, t6, 3, 1)
 liga.spiele(t3, t5, 0, 1)
 
 liga.printTabelle()
-
-
-my_list = [Team("Bayern"),
-           Team("Dortmund"),
-           Team("Leverkusen"),
-           Team("Leibzig"),
-           Team("FC Freiburg"),
-           Team("Union Berlin")]
