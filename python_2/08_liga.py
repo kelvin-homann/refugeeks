@@ -1,7 +1,27 @@
+class Spieler:
+    def __init__(self, name, alter, karriereStart, gehalt, position):
+        self.name = name
+        self.alter = alter
+        self.karriereStart = karriereStart
+        self.gehalt = gehalt
+        self.position = position
+
+    def __str__(self) -> str:
+        return "{} ist {} Jahre alt und verdient {}€".format(self.name, self.alter, self.gehalt)
+
+
 class Team:
     def __init__(self, name):
         self.name = name
         self.tore = 0
+        self.spielerListe = []
+
+    def meldeSpielerAn(self, spieler):
+        self.spielerListe.append(spieler)
+
+    def printTeam(self):
+        for spieler in self.spielerListe:
+            print(spieler)
 
     def __str__(self):
         return "{} hat {} Tore geschossen!".format(self.name, self.tore)
@@ -39,6 +59,16 @@ t3 = Team("Leverkusen")
 t4 = Team("Leibzig")
 t5 = Team("FC Freiburg")
 t6 = Team("Union Berlin")
+
+s1 = Spieler("Peter", 20, 2016, 5, "Stürmer")
+s2 = Spieler("Günther", 21, 2015, 6, "Abwehr")
+s3 = Spieler("Hans", 40, 2005, 0, "Torwart")
+
+t1.meldeSpielerAn(s1)
+t1.meldeSpielerAn(s2)
+t1.meldeSpielerAn(s3)
+
+print(t1.printTeam())
 
 liga.meldeAn(t1)
 liga.meldeAn(t2)
