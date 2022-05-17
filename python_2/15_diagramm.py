@@ -3,11 +3,26 @@ class Diagramm:
         self.title = title
         self.data = data
 
+    def getSpaces(self, word):
+        # Schritt 1:
+        laengstes_wort = ''
+
+        for key in self.data:
+            if len(key) > len(laengstes_wort):
+                laengstes_wort = key
+
+        # Schritt 2:
+        abstand = len(laengstes_wort) - len(word)
+
+        # Schritt 3:
+        return abstand * ' '
+
     def printDiagramm(self):
         print(self.title)
 
         for key in self.data:
-            row = "{}: {}".format(key, self.data[key] * '#')
+            spaces = self.getSpaces(key)
+            row = "{}{}: {}".format(key, spaces, self.data[key] * '#')
 
             # alternative
             # for i in range(self.data[key]):
