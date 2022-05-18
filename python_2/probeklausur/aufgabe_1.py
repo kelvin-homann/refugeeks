@@ -14,7 +14,11 @@ print(my_tuple)  # Fehler
 my_dict = {"name": "Max", "alter": 23, "wohnort": "Hannover"}
 
 for i in my_dict.values():
-    print(i)  # Max, 23, Hannover
+    print(i)
+
+# Max
+# 23
+# Hannover
 
 # d)
 my_tuple = ("Refugeeks", "Python")

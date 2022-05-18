@@ -7,6 +7,10 @@ def getValuesSum(any_dict):
     for key in any_dict:
         sum += len(any_dict[key])
 
+    # alternative:
+    # for value in any_dict.values():
+    #     sum += len(value)
+
     return sum
 
 

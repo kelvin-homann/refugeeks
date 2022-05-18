@@ -18,10 +18,10 @@ class Lehrer(Person):
 
 
 class Seminar:
-    def __init__(self, name, id) -> None:
+    def __init__(self, name, id, lehrer) -> None:
         self.name = name
         self.id = id
-        self.lehrer = None
+        self.lehrer = lehrer
         self.schuelerListe = []
 
     def meldeSchuelerAn(self, schueler):
@@ -31,8 +31,8 @@ class Seminar:
         self.lehrer = lehrer
 
 
-seminar = Seminar("Python 2", 1)
 lehrer = Lehrer("Kelvin", "kelvin@mail.de", 10)
+seminar = Seminar("Python 2", 1, lehrer)
 student = Student("Max", "max@mail.de", 1, 2)
 
 seminar.meldeSchuelerAn(student)
