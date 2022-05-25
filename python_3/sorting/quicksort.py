@@ -23,10 +23,3 @@ def partition(start, end, my_list):
     my_list[end], my_list[pivot_index] = my_list[pivot_index], my_list[end]
 
     return end
-
-
-if __name__ == "__main__":
-    print("Programm is main")
-    my_list = [2, 25, 12, 52, 10]
-    quick_sort(0, len(my_list) - 1, my_list)
-    print(my_list)
