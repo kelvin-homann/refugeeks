@@ -25,13 +25,12 @@ class Diagram:
 
         self.randomListsPythonSort = self.generateRandomLists()
         self.pythonSortTimes = self.measurePythonSortTimes()
-        print(self.pythonSortTimes)
 
         self.randomListsNumpySort = self.generateRandomLists()
         self.numpySortTimes = self.measureNumpySortTimes()
 
-        self.randomListsBubbleSort = self.generateRandomLists()
-        self.bubbleSortTimes = self.measureBubbleSortTimes()
+        # self.randomListsBubbleSort = self.generateRandomLists()
+        # self.bubbleSortTimes = self.measureBubbleSortTimes()
 
     def drawLogCurve(self):
         # O(n * log(n))
@@ -136,7 +135,7 @@ class Diagram:
 
     def draw(self):
         self.drawScatterMergeSort()
-        self.drawScatterBubbleSort()
+        # self.drawScatterBubbleSort()
         self.drawScatterQuickSort()
         self.drawScatterPythonSort()
         self.drawScatterNumpySort()
