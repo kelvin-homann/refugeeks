@@ -1,0 +1,2 @@
+Download - Max: 113.09 Min: 70.34 Mean: 95.92333333333333
+Upload - Max: 21.73 Min: 20.27 Mean: 21.209999999999997

@@ -28,8 +28,8 @@ class TestManager:
 
                 download = self.__speedTest.results.download
                 upload = self.__speedTest.results.upload
-                timestamp = self.__speedTest.results.timestamp
-                self.results.append(TestResult(download, upload, datetime.datetime.now()))
+                self.results.append(TestResult(
+                    download, upload, datetime.datetime.now()))
             else:
                 download = randrange(1, 100000000)
                 upload = randrange(1, 50000000)
