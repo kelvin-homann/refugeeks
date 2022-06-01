@@ -4,6 +4,7 @@ def countdown(n):
         return
     else:
         countdown(n - 1)  # Funktion ruft sich selbst auf
+        print(n)
 
 
-countdown(10)
+countdown(5)
