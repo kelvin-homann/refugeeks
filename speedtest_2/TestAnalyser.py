@@ -16,6 +16,7 @@ class TestAnalyser:
             resultDict["TimeStamp"].append(res.timestamp)
 
         self.resultFrame = pd.DataFrame(resultDict)
+        print(self.resultFrame)
 
     def writeReport(self):
         resFile = open("result.txt", "w")

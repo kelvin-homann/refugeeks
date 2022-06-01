@@ -4,7 +4,7 @@ from speedtest_2.TestAnalyser import TestAnalyser
 
 if __name__ == '__main__':
     print("Tests werden gestartet")
-    testManager = TestManager(False)
+    testManager = TestManager(True)
     testManager.speedtest()
 
     for res in testManager.results:
