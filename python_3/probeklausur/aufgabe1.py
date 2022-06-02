@@ -2,7 +2,7 @@ import numpy as np
 
 # a
 arr = np.array([[1, 2, 3], [4, 5, 6]], np.int32)
-print(arr.flatten())
+print(arr.flatten())  # [1 2 3 4 5 6]
 print('------------------------------------------------')
 # b
 arr = np.array([[[7, 2, 5], [1, 4, 3]], [[9, 5, 3], [6, 8, 2]]], np.int8)

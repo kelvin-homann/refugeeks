@@ -1,5 +1,5 @@
 def harmonicSumRecursive(n):
-    if n < 2:
+    if n == 1:
         return 1
     else:
         return 1 / n + (harmonicSumRecursive(n - 1))

@@ -20,4 +20,5 @@ list = [1, 2, 3]
 # O(n * n) == O(n^2)
 for a in list:
     for b in list:
-        print(a + b)
+        pass
+        # print(a, b)
